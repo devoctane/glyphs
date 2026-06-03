@@ -19,6 +19,9 @@ import { ShortcutsModal } from "./features/clipboard/components/shortcuts-modal"
 import { SettingsPage } from "./features/settings/components/settings-page";
 import { ItemPreview } from "./features/clipboard/components/item-preview";
 
+const isMac =
+  typeof navigator !== "undefined" && /Mac/.test(navigator.platform);
+
 export default function App() {
   const {
     items,
@@ -217,7 +220,9 @@ export default function App() {
   return (
     <div
       data-tauri-drag-region
-      className="flex h-screen w-screen flex-col overflow-hidden rounded-2xl border border-foreground/20 bg-white/70 dark:bg-transparent text-foreground dark:border-foreground/10"
+      className={`flex h-screen w-screen flex-col overflow-hidden rounded-2xl border border-foreground/20 text-foreground dark:border-foreground/10 ${
+        isMac ? "bg-white/70 dark:bg-transparent" : "bg-background"
+      }`}
     >
       <div className="no-drag flex min-h-0 flex-1 flex-col overflow-hidden border-t border-foreground/20">
         {isSettingsOpen ? (
