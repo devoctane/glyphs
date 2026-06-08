@@ -161,7 +161,7 @@ Looking for somewhere to start? Search the [issues](https://github.com/builtbyoc
 
 You're free to use AI assistants and agentic coding tools (Claude Code, Cursor, Copilot, etc.) on this codebase — there are no restrictions. **But with great power comes great responsibility:** understand what you're pushing and *why*, not just *what*. Skim the diff, run it locally, and be able to defend the change in review.
 
-For full transparency: the entire Rust/Tauri shell was migrated from an earlier Electron prototype with heavy AI assistance, back when I wasn't a Rust guy. I can now explain how the code works and why it's written that way — but it took going back and reading every line after the fact. Please don't skip that step.
+For full transparency: the entire Rust/Tauri shell was migrated from an earlier Electron prototype with heavy AI assistance, back when I wasn't a Rust guy (even not now). I can now explain how the code works (i doubt because rust code makes me sleepy) and why it's written that way — but it took going back and reading every line after the fact. Please don't skip that step.
 
 ## License
 
